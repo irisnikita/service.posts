@@ -27,9 +27,9 @@ db.on('error', (err) => {
 app.use(cors());
 app.use(bodyParser.json());
 // app.use('/public', express.static('public'));
-app.get('/', (req, res) => {
-    res.send({server: 'Posts services', port: PORT});
-});
+// app.get('/', (req, res) => {
+//     res.send({server: 'Posts services', port: PORT});
+// });
 
 require('./routes/post')(app);
 
